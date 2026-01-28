@@ -2,8 +2,9 @@ import discord
 from discord.ext import commands
 from discord.ui import View, Button
 import io
+import os
 
-TOKEN = "BOT_TOKENİNİ_BURAYA_YAZ"
+TOKEN = os.getenv("TOKEN")
 LOG_CHANNEL_ID = 1466030876709359680
 
 intents = discord.Intents.default()
